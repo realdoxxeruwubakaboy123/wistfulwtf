@@ -324,7 +324,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(9, 1fr);
+      grid-template-columns: repeat(10, minmax(0, 1fr));
       grid-auto-rows: 300px;
       justify-content: center;
       justify-items: center;
@@ -897,6 +897,26 @@
         </div>
       </div>
 
+      <div class="card">
+        <div class="card-content">
+          <img class="pfp" src="kaneki.jpg" alt="kaneki">
+          <div class="username">kaneki</div>
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/261558236426010624">
+            <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img class="pfp" src="soulsociety.jpg" alt="soulsociety">
+          <div class="username">soulsociety</div>
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/1521190133225881700">
+            <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -1066,7 +1086,7 @@
     (function () {
       const COUNT_KEY = 'views_count_v1';
       const TIME_KEY = 'views_time_v1';
-      const START = 4594;
+      const START = 5396;
       const PERIOD = 3 * 60 * 60 * 1000;
       const now = Date.now();
       const storedCount = parseInt(localStorage.getItem(COUNT_KEY), 10);
