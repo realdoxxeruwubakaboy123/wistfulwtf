@@ -324,8 +324,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(10, minmax(0, 1fr));
-      grid-auto-rows: 300px;
+      grid-template-columns: repeat(11, minmax(0, 1fr));
+      grid-template-rows: repeat(2, 300px);
       justify-content: center;
       justify-items: center;
       gap: 12px;
@@ -338,7 +338,8 @@
     /* WEISSE CARDS MIT ROTIERENDEM WEISSEN STRICH */
     .card {
       flex: 0 0 auto;
-      width: 170px;
+      width: 100%;
+      max-width: 170px;
       height: 300px;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 25px;
@@ -731,7 +732,7 @@
         <div class="card-content">
           <img class="pfp" src="felix.jpg" alt="felix">
           <div class="username">felix</div>
-          <a class="discord-btn" target="_blank" href="https://discord.com/users/1263910506704404630">
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/1209268660502265888">
             <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
           </a>
         </div>
@@ -779,7 +780,7 @@
 
       <div class="card">
         <div class="card-content">
-          <img class="pfp" src="datenablage.png" alt="datenablage">
+          <img class="pfp" src="datenablage.jpg" alt="datenablage">
           <div class="username">datenablage</div>
           <a class="discord-btn" target="_blank" href="https://discord.com/users/1508811485969649714">
             <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
@@ -811,7 +812,7 @@
         <div class="card-content">
           <img class="pfp" src="assault.jpg" alt="assault">
           <div class="username">assault</div>
-          <a class="discord-btn" target="_blank" href="https://discord.com/users/454740200854388737">
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/1526345416705179828">
             <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
           </a>
         </div>
@@ -869,7 +870,7 @@
 
       <div class="card">
         <div class="card-content">
-          <img class="pfp" src="reverse.jpg" alt="glo6k">
+          <img class="pfp" src="glo6k.jpg" alt="glo6k">
           <div class="username">glo6k</div>
           <a class="discord-btn" target="_blank" href="https://discord.com/users/1518364059479703765">
             <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
@@ -912,6 +913,26 @@
           <img class="pfp" src="soulsociety.jpg" alt="soulsociety">
           <div class="username">soulsociety</div>
           <a class="discord-btn" target="_blank" href="https://discord.com/users/1521190133225881700">
+            <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img class="pfp" src="reverse.jpg" alt="reverse">
+          <div class="username">reverse</div>
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/1187527704254365887">
+            <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img class="pfp" src="jug.jpg" alt="jug">
+          <div class="username">jug</div>
+          <a class="discord-btn" target="_blank" href="https://discord.com/users/191603737779896320">
             <img src="https://files.catbox.moe/clka2s.webp" alt="Discord">
           </a>
         </div>
@@ -1086,7 +1107,7 @@
     (function () {
       const COUNT_KEY = 'views_count_v1';
       const TIME_KEY = 'views_time_v1';
-      const START = 5396;
+      const START = 6461;
       const PERIOD = 3 * 60 * 60 * 1000;
       const now = Date.now();
       const storedCount = parseInt(localStorage.getItem(COUNT_KEY), 10);
